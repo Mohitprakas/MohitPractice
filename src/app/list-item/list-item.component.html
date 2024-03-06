@@ -1,0 +1,19 @@
+
+
+
+   
+        @for(item of items;track i;let i =$index){
+            <app-list [id]="i+2" ></app-list>
+           
+            @defer () {
+                <div class="placehonder">placehonder</div>
+            }@loading {
+                <div>loading</div>
+            }
+        }
+
+
+        <div class="encaps">
+            child component
+        </div>
+       
